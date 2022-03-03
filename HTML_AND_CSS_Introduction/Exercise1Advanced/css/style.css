@@ -26,11 +26,11 @@ nav > ul {
     display: flex;
     
 }
-a:link {
+a:link, a:visited {
     text-decoration: none;
     color: white;
 }
-a:hover {
+a:hover, a:active {
     color: orangered;
 }
 
