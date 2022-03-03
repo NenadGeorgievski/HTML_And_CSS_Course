@@ -19,3 +19,12 @@ table, td {
     border-collapse: collapse;
     padding: 10px;
 }
+.language {
+    font-weight: bold;
+    background: purple;
+}
+#aloha {
+    letter-spacing: 8px;
+    font-variant: small-caps;
+    background: green;
+}
