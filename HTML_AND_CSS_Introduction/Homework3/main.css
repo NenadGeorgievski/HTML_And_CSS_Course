@@ -5,6 +5,16 @@ body {
     font-size: 36px;
     font-weight: lighter;
 }
+div {
+    width: 240px;
+    padding: 10px;
+    border: 5px solid white;
+    margin: 10px;
+    margin-right: 60px;
+}
+div.float-left {
+    float: left;
+}
 th {
     border: #fff3e3;
 }
@@ -23,7 +33,7 @@ h1 {
 }
 #quote {
     font-size: 0,75em;
-    text-indent: 4em;
+    text-indent: 3em;
     line-height: 2em;
 }
 table, td {
