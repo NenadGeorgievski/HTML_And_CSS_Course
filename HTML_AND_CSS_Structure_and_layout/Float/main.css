@@ -1,0 +1,29 @@
+body {
+    background-color: aqua;
+}
+div {
+    text-align: center;
+    margin: 15px;
+    padding: 100px;
+    color: white;
+    background: #659494;
+}
+#floatContainer {
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+#floatContainer div {
+    float: left;
+}
+#flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    margin-top: 20px;
+}
+#gridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: antiquewhite;
+    margin-top: 20px;
+}

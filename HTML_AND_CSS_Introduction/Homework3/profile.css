@@ -4,6 +4,18 @@
 .float-right {
     float: right;
 }
+.mt-div2 {
+    margin-top: 150px;
+}
+.mr-div2 {
+    margin-right: 650px;
+}
+.inline {
+    display: inline;
+}
+.w-50 {
+    width: 50%;
+}
 
 img {
     max-width: 300px;
