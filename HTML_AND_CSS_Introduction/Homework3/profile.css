@@ -1,0 +1,17 @@
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+
+img {
+    max-width: 300px;
+    max-height: 300px;
+}
+.no-overflow {
+    overflow: auto;
+}
+.margin-left {
+    margin-left: 70px;
+}
