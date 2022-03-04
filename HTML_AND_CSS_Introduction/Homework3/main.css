@@ -19,6 +19,12 @@ img {
 h1 {
     border: 2px solid white;
     color: #ae7182;
+    text-shadow: 2px 2px 8px #C0C0F3;
+}
+#quote {
+    font-size: 0,75em;
+    text-indent: 4em;
+    line-height: 2em;
 }
 table, td {
     border: 1px solid #262b53;
