@@ -1,0 +1,30 @@
+header {
+    background-color: #f2a062;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+#main-content {
+    background-color: #8eabc0;
+    padding: 15px;
+    height: 400px;
+}
+#sub-content {
+    background-color: aquamarine;
+    padding: 15px;
+    height: 400px;
+}
+aside {
+    background-color: #f6bd62;
+    padding: 15px;
+    height: 400px;
+}
+
+footer {
+    padding: 15px;
+    background-color: #b7ce3f;
+}
+#content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
