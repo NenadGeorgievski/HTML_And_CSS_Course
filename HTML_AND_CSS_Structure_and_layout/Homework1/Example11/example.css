@@ -1,0 +1,45 @@
+header {
+    background-color: #f2a062;
+    padding: 15px;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+#logo {
+    float: left;
+    padding: 15px;
+    background-color: #eb6481;
+}
+nav {
+    background-color: #d76a50;
+    float: right;
+    padding: 15px;
+}
+main {
+    background-color: #8eabc0;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.subcontent {
+    background-color: #b7ce3f;
+    overflow: hidden;
+    color: white;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+.subcontent img {
+    float: left;
+}
+#paragraphID {
+    background-color: rgba(0, 0, 0, 0.4);
+    float: right;
+    width: 80%;
+    padding: 15px;
+}
+footer {
+    clear: both;
+    padding: 15px;
+    background-color: #b7ce3f;
+}
