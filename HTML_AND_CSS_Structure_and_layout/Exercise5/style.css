@@ -1,0 +1,31 @@
+* {
+    text-align: center;
+    color: white;
+}
+header, nav, main, footer, main div {
+    background-color: #709495;
+    padding: 20px;
+    margin: 20px;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.displayFlex div {
+    border: 1px solid white;
+    box-sizing: border-box;
+    width: 250px;
+}
+.displayFlex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.displayGrid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.displayGrid div {
+    border: 1px solid white;
+}
