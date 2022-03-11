@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+       ul {
+        margin-top: 30px;
+        display: flex;
+        list-style-type: none;
+    }
+    ul li {  
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        padding: 15px;
+    }
+    ol {
+        display: flex;
+        list-style-type: none;
+    }
+    ol li::after {
+        margin-left: 0 5px;
+        content: "/";
+    }
+    ol li:last-of-type::after {
+        content: "";
+    }
+ 
+</style>
+<body>
+    <ul>
+        <li>Videos to rent</li>
+        <li>Videos to buy</li>
+        <li>Used DVDs</li>
+        <li>Offers</li>
+    </ul>
+    <ol>
+        <li>Home</li>
+        <li>Used DVDs</li>
+        <li>Less than 10$</li>
+    </ol>
+</body>
+</html>
