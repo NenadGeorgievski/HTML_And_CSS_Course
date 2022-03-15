@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valiation form</title>
+    <style>
+            * {
+            font-family: Arial, sans-serif;
+        }
+        label {
+            font-size: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        div {
+            margin-bottom: 30px;
+        }
+        fieldset {
+            border: 0;
+            padding: 30px;
+        }
+        input, textarea{
+            border: 0;
+            border-bottom: 1px solid gray;
+            padding: 10px 0;
+            width: 200px;
+        }
+        select {
+            background: transparent;
+            border: 0;
+            border-radius: 0;
+            border-bottom: 1px solid gray;
+            box-shadow: none;
+            color: #666;
+            -webkit-appearance: none;
+            padding: 10px 0;
+            width: 200px;
+        }
+        .select-wrapper {
+            position: relative;
+            width: 200px;
+        }
+        .select-wrapper:after {
+            content: '<>';
+            color: #666;
+            font-size: 14px;
+            top: 8px;
+            right: 0;
+            transform: rotate(90deg);
+            position: absolute;
+            z-index: -1;
+        }
+        #centrirano {
+            display: flex;
+            justify-content: center;
+        }
+        button {
+            background: #999;
+            border: 0;
+            color: white;
+            font-size: 12px;
+            height: 50px;
+            width: 200px;
+            border-radius: 25px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <form action="url_to_somewhere" id="centrirano">
+        <fieldset>
+          
+            <div>
+                <label for="first_name">First name:</label><br>
+                <input type="text" name="first_name" id="first_name" placeholder="John" required>
+            </div>
+            <div>
+                <label for="last_name">Last name:</label><br>
+                <input type="text" name="last_name" id="last_name" placeholder="Doe" required>
+            </div>
+            <div>
+                <label for="select_country">Country:</label><br>
+                <div class="select-wrapper">
+                    <select name="select_country" id="select_country" placeholder="Macedonia">
+                        <option value="macedonia">Macedonia</option>
+                        <option value="cameroon">Cameroon</option>
+                        <option value="india">India</option>
+                    </select>
+                </div>
+            </div>
+            <br><br><br>
+            <div>
+                <label for="textarea_message">Message:</label><br>
+                <textarea name="textarea_message" id="textarea_message" cols="20" rows="5" placeholder="Your message goes here.." required></textarea>
+            </div>
+            <button type="submit">Submit!</button>
+        </fieldset>
+    </form>
+</body>
+</html>
