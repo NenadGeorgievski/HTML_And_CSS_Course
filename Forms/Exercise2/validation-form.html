@@ -67,6 +67,14 @@
             border-radius: 25px;
             text-transform: uppercase;
         }
+        input:valid,
+        textarea:valid {
+            border-bottom: 1px solid green;
+        }
+        input:invalid,
+        textarea:invalid {
+            border-bottom: 1px solid red;
+        }
     </style>
 </head>
 <body>
@@ -80,6 +88,10 @@
             <div>
                 <label for="last_name">Last name:</label><br>
                 <input type="text" name="last_name" id="last_name" placeholder="Doe" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required placeholder="Your email goes here..">
             </div>
             <div>
                 <label for="select_country">Country:</label><br>
