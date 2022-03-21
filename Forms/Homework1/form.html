@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+       
+        <form action="#" method="post">
+            <fieldset>
+                <h1>Property for sale in London</h1>
+                <div class="double-input">
+                    <div class="no-margin">
+                        <label for="area">Search radius:</label>
+                        <div class="select-wrapper">
+                            <select name="area" id="area" required>
+                                <option value="local" selected>This area only</option>
+                                <option value="mk">Macedonia</option>
+                                <option value="en">England</option>
+                                <option value="sr">Sri Lanka</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="no-margin-right">
+                        <label for="property">Property type:</label>
+                        <div class="select-wrapper">
+                            <select name="property" id="property" required>
+                                <option value="any" selected>Any</option>
+                                <option value="house">Houses</option>
+                                <option value="castles">Castles</option>
+                                <option value="big-ben">The Big Ben</option>
+                            </select>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="double-input">
+                    <div class="no-margin">
+                        <label for="price">Price range:</label>
+                        <div class="select-wrapper" style="margin-left: 31px;">
+                            <select name="price" id="price" required>
+                                <option value="any" selected>Any</option>
+                                <option value="low">0-100$</option>
+                                <option value="mid">100-300$</option>
+                                <option value="high">300$+</option>
+                            </select>
+                        </div>  
+                    </div>
+                    <div class="no-margin-right">
+                        <label for="time-added">Added to site:</label>
+                        <div class="select-wrapper">
+                            <select name="time-added" id="time-added" required>
+                                <option value="anytime" selected>Anytime</option>
+                                <option value="old">1 year ago</option>
+                                <option value="recent">Less than 6 months ago</option>
+                                <option value="new">Less than e weak ago</option>
+                            </select>
+                        </div>   
+                    </div>
+                </div>
+                <div class="double-input">
+                    <div class="no-margin">
+                        <label for="bedrooms">Bedrooms:</label>
+                        <div class="select-wrapper" style="margin-left: 39px;">
+                            <select name="bedrooms" id="bedrooms" required>
+                                <option value="any" selected>Any</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3-or-more">3+</option>
+                            </select>
+                        </div>    
+                    </div>
+                    <div class="margin-right">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox">Include sold properties</label>
+                    </div>
+                </div>
+                <button type="submit">FIND PROPERTIES</button>
+            </fieldset>
+        </form>
+    </main>
+  
+</body>
+</html>
