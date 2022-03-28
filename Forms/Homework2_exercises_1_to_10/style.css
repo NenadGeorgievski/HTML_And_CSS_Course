@@ -1,0 +1,21 @@
+#flexed-fieldset {
+  display: flex;
+}
+#radiobuttons {
+  display: flex;
+  border: none;
+}
+#flexed-buttons {
+  display: flex;
+  vertical-align: center;
+  margin-top: 14px;
+}
+#second-radiobuttons {
+  border: none;
+}
+#textarea1 {
+  margin-top: 15px;
+}
+input {
+  margin-right: 5px;
+}

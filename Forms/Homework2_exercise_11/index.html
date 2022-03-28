@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 11</title>
+  <style>
+    main {
+      width: 80%;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <form action="">
+      <h3>A form used to determine the users preference for links:</h3>
+      <br><br>
+      <div>
+        <label for="select">Choose a color for links:</label>
+        <select name="select" id="select">
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+          <option value="yellow">Yellow</option>
+        </select>
+      </div>
+      <br><br>
+      <div>
+        <p style="display: inline;">Underline links?</p>
+        <input type="radio" id="yes" name="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="no">
+        <label for="no">No</label>
+      </div>
+      <br><br>
+      <div>
+        <button type="submit">Submit!</button>
+        <button type="reset">Reset!</button>
+      </div>
+      <hr style="color: gray;">
+      <br><br>
+    </form>
+    <form action="">
+      <h3>A form used to register a user to a forum:</h3>
+      <fieldset>
+        <legend>Register Now</legend>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <br><br>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email">
+        </div>
+        <br><br>
+        <p>Which web browser do you use? (Check all that apply)</p>
+        <div>
+          <input type="checkbox" id="firefox" name="firefox">
+          <label for="firefox">Firefox</label>
+        </div>
+        <div>
+          <input type="checkbox" id="chrome" name="chrome">
+          <label for="chrome">Chrome</label>
+        </div>
+        <div>
+          <input type="checkbox" id="opera" name="opera">
+          <label for="opera">Opera</label>
+        </div>
+        <div>
+          <input type="checkbox" id="safari" name="safari">
+          <label for="safari">Safari</label>
+        </div>
+        <div>
+          <input type="checkbox" id="internet-explorer" name="internet-explorer">
+          <label for="internet-explorer">Internet explorer</label>
+        </div>
+        <div>
+          <input type="checkbox" id="other" name="other">
+          <label for="other">Other</label>
+        </div>
+        <br><br><br>
+        <div>
+          <label for="textarea">Enter a forum signature:</label>
+          <br><br>
+          <textarea name="textarea" id="textarea" cols="40" rows="10"></textarea>
+        </div>
+        <div>
+          <label for="password">Choose a password:</label>
+          <input type="password" name="password" id="password">
+        </div>
+        <br>
+        <div>
+          <label for="re-password">Re-type password:</label>
+          <input type="password" name="repassword" id="re-password">
+        </div>
+        <br><br>
+        <button type="submit">Submit!</button>
+        <button type="reset">Reset!</button>
+  
+      </fieldset>
+    </form>
+  </main>
+ 
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <button type="submit">Click me to submit!</button>
+  <br><br>
+  <button type="submit">No, no. Click me instead!</button>  
+  <form action="#" method="post">
+    <div>
+      <input type="checkbox" name="checkbox" id="firefox">
+      <label for="firefox">Firefox</label>
+    </div>
+    <div>
+      <input type="checkbox" name="checkbox" id="safari">
+      <label for="safari">Safari</label>
+    </div>
+    <div>
+      <input type="checkbox" name="checkbox" id="chrome">
+      <label for="chrome">Chrome</label>
+    </div>
+    <div>
+      <input type="checkbox" name="checkbox" id="mozilla">
+      <label for="mozilla">Mozilla</label>
+    </div>
+    <div>
+      <input type="checkbox" name="checkbox" id="opera">
+      <label for="opera">Opera</label>
+    </div>
+    <div>
+      <input type="checkbox" name="checkbox" id="bing">
+      <label for="bing">Bing</label>
+    </div>
+  </form>
+  <form action="#">
+    <fieldset id="flexed-fieldset">
+      <legend>Contact Information:</legend>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email">
+      </div>
+    </fieldset>
+  </form>
+  <input type="hidden" placeholder="This input is hidden.">
+  <input type="text" placeholder="This input is visible.">
+  <br><br>
+  <input type="image" src="./images/submit.jpg">
+  <br><br>
+  <form action="">
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+    </div>
+  </form>
+  <form action="">
+    <fieldset id="radiobuttons">
+      <p>Would you like to subscribe to our channel?</p>
+     <div id="flexed-buttons">
+       <div>
+        <input type="radio" value="yes" name="radiobutton" id="yes">
+        <label for="yes">Yes</label>
+       </div>
+       <div>
+        <input type="radio" value="no" name="radiobutton" id="no">
+        <label for="no">No</label>
+       </div> 
+     </div>
+    </fieldset>
+    <fieldset id="second-radiobuttons">
+      <p>How often do you read books?</p>
+      <div>
+        <input type="radio" value="once" name="radiobutton2" id="once">
+        <label for="once">Once</label>
+      </div>
+      <div>
+        <input type="radio" value="twice" name="radiobutton2" id="twice">
+        <label for="twice">Twice a week</label>
+      </div>
+      <div>
+        <input type="radio" value="five" name="radiobutton2" id="five">
+        <label for="five">Five times a week</label>
+      </div>
+      <div>
+        <input type="radio" value="other" name="radiobutton2" id="other">
+        <label for="other">Other</label>
+      </div>
+    </fieldset>
+  </form>
+  <br><br><br>
+  <form action="#">
+    <fieldset>
+      <legend>Contact Information:</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email">
+      <div id="textarea1">
+        <textarea name="info" id="info" cols="30" rows="10">Enter your information here...</textarea>
+      </div>
+    </fieldset>
+  </form>
+  <form action="submitted">
+    <div>
+      <label for="some-text">Enter some text here:</label>
+      <input type="text" name="some-text" id="some-text">
+    </div>
+    <button type="submit">Submit!</button>
+  </form>
+  <form action="#" style="margin-top: 15px;">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email">
+    </div>
+    <div>
+      <button type="reset">Reset!</button>
+    </div>
+  </form>
+</body>
+</html>
