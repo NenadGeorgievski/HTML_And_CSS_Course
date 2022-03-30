@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+fieldset {
+  width: 40%;
+  margin: 30px auto;
+}
+fieldset h1 {
+  text-align: center;
+  color: red;
+  background-color: yellow;
+}
+.input-control {
+  display: flex;
+  align-items: center;
+}
+
+label,
+input,
+textarea,
+select,
+p {
+  background-color: rgb(119, 220, 245);
+  width: 50%;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
