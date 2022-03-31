@@ -1,3 +1,10 @@
+/* 
+Author: Nenad Georgievski
+   Date: 31.03.2022        
+   File Name:style.css    
+*/
+
+/* CSS Reset*/
 body,
 header,
 main,
@@ -5,35 +12,46 @@ nav,
 footer,
 div,
 h1,
-img {
+img,
+ul {
   margin: 0;
   padding: 0;
   border: 0;
 }
+/* Style rules for body and images */
 body {
-  background-color: #ccc;
+  background-color: black;
 }
 img {
   max-width: 100%;
   display: block;
 }
+/* Style rules for mobile viewport */
 header {
-  float: left;
-  width: 25%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #000;
+  height: 190px;
+  z-index: 1;
 }
+header img {
+  margin: 0 auto;
+}
+
+/* Style rules for navigation area */
 nav {
-  float: right;
-  margin: 5em 3em 0 0;
-  width: 70%;
+  margin-bottom: 1%;
+  padding: 1%;
 }
 nav ul {
   list-style-type: none;
-  margin: 0;
-  text-align: right;
+  text-align: center;
 }
 nav li {
-  display: inline-block;
-  font-size: 1.75em;
+  font-size: 1.5em;
+  font-family: "Francois One", sans-serif;
+  border-top: 1px solid #fff;
 }
 nav li a {
   display: block;
@@ -42,6 +60,7 @@ nav li a {
   padding: 0.5em 1em;
   text-decoration: none;
 }
+/* Style rules for main content */
 main {
   clear: left;
   font-size: 1.25em;
@@ -67,16 +86,6 @@ h1 {
 .arrow-bullets {
   list-style-image: url("/images/arrow.png");
 }
-footer p {
-  font-size: 0.75em;
-  text-align: center;
-  color: white;
-  padding: 0 1em;
-}
-footer p a {
-  text-decoration: none;
-  color: white;
-}
 #weights,
 #cardio,
 #training {
@@ -97,13 +106,6 @@ footer p a {
 #exercises dd {
   padding: 0.5% 1% 2% 0;
 }
-#contact {
-  text-align: center;
-}
-#contact a {
-  text-decoration: none;
-  color: #666600;
-}
 .action {
   font-size: 1.25em;
   font-weight: bold;
@@ -116,4 +118,23 @@ footer p a {
 }
 .map {
   border: 8px solid #000;
+}
+#contact {
+  text-align: center;
+}
+#contact a {
+  text-decoration: none;
+  color: #666600;
+}
+
+/* Style rules for the footer */
+footer p {
+  font-size: 0.75em;
+  text-align: center;
+  color: white;
+  padding: 0 1em;
+}
+footer p a {
+  text-decoration: none;
+  color: white;
 }
