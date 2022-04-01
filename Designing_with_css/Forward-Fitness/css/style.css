@@ -53,19 +53,46 @@ nav li {
   font-family: "Francois One", sans-serif;
   border-top: 1px solid #fff;
 }
+nav li:first-child {
+  border-top: none;
+}
 nav li a {
   display: block;
   color: #fff;
-  text-align: center;
   padding: 0.5em 1em;
   text-decoration: none;
+}
+/* Show mobile class instead of desktop class */
+.mobile {
+  display: block;
+}
+.tablet-desktop {
+  display: none;
 }
 /* Style rules for main content */
 main {
   clear: left;
-  font-size: 1.25em;
+  font-size: 1.15em;
   padding: 2%;
   background-color: #fff;
+  font-family: "Roboto Slab", serif;
+}
+.tel-link {
+  background-color: #404040;
+  padding: 2%;
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 5px;
+  text-align: center;
+}
+.tel-link a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  display: block;
+}
+.hours {
+  margin-left: 10%;
 }
 h1 {
   text-align: center;
@@ -83,29 +110,15 @@ h1 {
   margin-left: 30px;
   color: white;
 }
-.arrow-bullets {
-  list-style-image: url("/images/arrow.png");
-}
 #weights,
 #cardio,
 #training {
-  width: 29%;
-  float: left;
   margin: 0 2%;
 }
-#exercises {
-  clear: left;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-  background-color: #f2f2f2;
-  padding: 1% 2%;
+.round {
+  border-radius: 8px;
 }
-#exercises dt {
-  font-weight: bold;
-}
-#exercises dd {
-  padding: 0.5% 1% 2% 0;
-}
+
 .action {
   font-size: 1.25em;
   font-weight: bold;
@@ -117,12 +130,14 @@ h1 {
   text-decoration: none;
 }
 .map {
-  border: 8px solid #000;
+  border: 2px solid #000;
+  width: 95%;
+  height: 50%;
 }
 #contact {
   text-align: center;
 }
-#contact a {
+#contact .contact-email-link {
   text-decoration: none;
   color: #666600;
 }
@@ -138,3 +153,16 @@ footer p a {
   text-decoration: none;
   color: white;
 }
+/* #exercises {
+  clear: left;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  background-color: #f2f2f2;
+  padding: 1% 2%;
+}
+#exercises dt {
+  font-weight: bold;
+}
+#exercises dd {
+  padding: 0.5% 1% 2% 0;
+} */
