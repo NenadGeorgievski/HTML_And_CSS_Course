@@ -1,29 +1,93 @@
-body {
+* {
+  border: 0;
   margin: 0;
   padding: 0;
-  border: 0;
+  font-size: 20px;
 }
 fieldset {
-  width: 40%;
+  border: 5px solid gray;
   margin: 30px auto;
+  width: 70%;
 }
-fieldset h1 {
+h1 {
   text-align: center;
   color: red;
-  background-color: yellow;
+  background-color: rgb(238, 238, 169);
+  border: 1px solid black;
+  margin: 5px;
+  padding: 10px 0 10px 0;
+  font-size: 32px;
 }
-.input-control {
+.flexed {
   display: flex;
-  align-items: center;
+  margin: 5px;
+  gap: 10px;
 }
-
-label,
-input,
-textarea,
-select,
-p {
-  background-color: rgb(119, 220, 245);
+.flexed-btns {
+  display: flex;
+  margin: 5px;
+  gap: 10px;
+  justify-content: space-around;
+}
+.btn {
+  padding: 15px 120px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.btns-wrapper {
+  border: 1px solid black;
+  padding: 10px 20px 10px 15px;
+  background-color: rgb(158, 198, 235);
+}
+.label-wrapper {
+  border: 1px solid black;
+  padding: 10px 20px 10px 15px;
+  background-color: rgb(158, 198, 235);
+  width: 15%;
+}
+.label-wrapper-textarea {
+  border: 1px solid black;
+  padding: 10px 20px 10px 15px;
+  background-color: rgb(158, 198, 235);
+  width: 15%;
+}
+.input-wrapper {
+  background-color: rgb(158, 198, 235);
+  border: 1px solid black;
+  width: 85%;
+}
+.input-size {
+  width: 75%;
+  height: 80%;
+  margin-left: 20px;
+  margin-top: 4px;
+}
+.input-size-textarea {
+  width: 75%;
+  height: 80%;
+  margin-left: 20px;
+  margin-top: 12px;
+}
+.input-size-select {
+  width: 35%;
+  height: 80%;
+  margin-left: 20px;
+  margin-top: 4px;
+}
+.input-size-photo {
   width: 50%;
-  margin-bottom: 5px;
-  margin-right: 5px;
+  height: 80%;
+  margin-left: 20px;
+  margin-top: 7px;
+}
+.checkbox-wrapper {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+.input-wrapper-radio {
+  background-color: rgb(158, 198, 235);
+  border: 1px solid black;
+  width: 81%;
+  padding: 20px;
 }

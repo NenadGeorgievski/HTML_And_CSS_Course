@@ -4,49 +4,102 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Registration Form</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <form action="">
-   <fieldset>
-     <h1>Registration Form</h1>
-     <div class="input-control">
-       <label for="name">Enter Name</label>
-       <input type="text" name="name" id="name">
-     </div>
-     <div class="input-control">
-       <label for="password">Enter Password</label>
-       <input type="password" name="password" id="password">
-     </div>
-     <div class="input-control">
-       <label for="textarea">Enter Address</label>
-       <textarea name="textarea" id="textarea" cols="30" rows="5"></textarea>
-     </div>
-     <div class="input-control">
-       <p>Select Game</p>
-       <div>
-        <input type="checkbox" name="hockey" id="hockey">
-        <label for="hockey">Hockey</label>
-       </div>
-       <div>
-        <input type="checkbox" name="football" id="football">
-        <label for="football">Football</label>
-       </div>
-       <div>
-        <input type="checkbox" name="badminton" id="badminton">
-        <label for="badminton">Badminton</label>
-       </div>
-       <div>
-        <input type="checkbox" name="crickey" id="crickey">
-        <label for="crickey">Cricket</label>
-       </div>
-       <div>
-        <input type="checkbox" name="volleyball" id="volleyball">
-        <label for="volleyball">Volleyball</label>
-       </div>
-     </div>
-   </fieldset>
+  <form action="#" method="post">
+    <fieldset>
+      <h1>Registration Form</h1>
+      <div class="flexed">
+        <div class="label-wrapper">
+          <label for="name">Enter Name</label>
+        </div>
+        <div class="input-wrapper">
+          <input type="text" name="name" id="name" class="input-size">
+        </div>
+      </div>
+      <div class="flexed">
+        <div class="label-wrapper">
+          <label for="password">Enter Password</label>
+        </div>
+        <div class="input-wrapper">
+          <input type="password" name="password" id="password" class="input-size">
+        </div>
+      </div>
+      <div class="flexed">
+        <div class="label-wrapper-textarea">
+          <label for="textarea">Enter Address</label>
+        </div>
+        <div class="input-wrapper">
+          <textarea name="textarea" id="textarea" cols="30" rows="7" class="input-size-textarea"></textarea>
+        </div>
+      </div>
+      <div class="flexed">
+        <div class="label-wrapper">
+          <p>Select Game</p>
+        </div>
+        <div class="input-wrapper">
+          <div class="checkbox-wrapper">
+            <input type="checkbox" name="checkbox" id="hockey">
+            <label for="hockey">Hockey</label>
+          </div>
+          <div class="checkbox-wrapper">
+            <input type="checkbox" name="checkbox" id="football">
+            <label for="football">Football</label>
+          </div>
+          <div class="checkbox-wrapper">
+            <input type="checkbox" name="checkbox" id="badminton">
+            <label for="badminton">Badminton</label>
+          </div>
+          <div class="checkbox-wrapper">
+            <input type="checkbox" name="checkbox" id="cricket">
+            <label for="cricket">Cricket</label>  
+          </div>
+          <div class="checkbox-wrapper">
+            <input type="checkbox" name="checkbox" id="volleyball">
+            <label for="volleyball">Volleyball</label>
+          </div>
+        </div>
+      </div>
+      <div class="flexed">
+        <div class="label-wrapper">
+          <label for="gender">Gender</label>
+        </div>
+        <div class="input-wrapper-radio">
+          <input type="radio" name="radiobutton" id="male">
+          <label for="male" style="margin-right: 20px;">Male</label>
+          <input type="radio" name="radiobutton" id="female">
+          <label for="female">Female</label>
+        </div>
+      </div>
+      <div class="flexed">
+        <div class="label-wrapper">
+          <label for="age">Select your age</label>
+        </div>
+        <div class="input-wrapper">
+          <select name="age" id="age" class="input-size-select">
+            <option value="select" selected>Select</option>
+            <option value="under-age">Less than 18</option>
+            <option value="appropriate-age">18 and plus</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="flexed">
+      <div class="label-wrapper">
+        <label for="photo">Select Photo</label>
+      </div>
+      <div class="input-wrapper">
+        <input type="file" id="photo" name="photo" class="input-size-photo">
+      </div>
+    </div>
+    <div class="flexed-btns btns-wrapper">
+      <button type="submit" class="btn">Click Me</button>
+      <button type="reset" class="btn">Reset</button>
+      <button type="submit" class="btn">Submit Form</button>
+    </div>
+    </fieldset>
   </form>
 </body>
 </html>
