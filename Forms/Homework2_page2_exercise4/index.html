@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up Form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <form action="#" method="post">
+    <fieldset>
+      <h1>Sign Up</h1>
+      <div class="flexed">
+        <label for="first-name" class="label-control">First Name</label>
+        <input type="text" id="first-name" name="first-name" class="input-control" placeholder="Enter First Name">
+      </div>
+      <div class="flexed">
+        <label for="last-name" class="label-control">Last Name</label>
+        <input type="text" id="last-name" name="last-name" class="input-control" placeholder="Enter Last Name">
+      </div>
+      <div class="flexed">
+        <label for="select-menu" class="label-control">
+          Date of birth
+        </label>
+        <select name="date" id="select-menu" class="select-control">
+          <option value="date" selected>Date</option>
+          <option value="today">Today</option>
+          <option value="yesterday">Long time ago</option>
+        </select>
+        <select name="month" id="month" class="select-control">
+          <option value="month" selected>Month</option>
+          <option value="jan">January</option>
+          <option value="feb">February</option>
+          <option value="mar">March</option>
+          <option value="apr">April</option>
+          <option value="may">May</option>
+          <option value="june">June</option>
+          <option value="jul">July</option>
+          <option value="aug">August</option>
+          <option value="sep">September</option>
+          <option value="oct">October</option>
+          <option value="nov">November</option>
+          <option value="dec">December</option>
+        </select>
+        <select name="year" id="year" class="select-control">
+          <option value="year" selected>Year</option>
+          <option value="millenia">Over 1000 years ago</option>
+          <option value="now">I dont have time for a widget right now</option>
+        </select>
+      </div>
+      <div class="flexed">
+        <p class="label-control" style="margin-right: 110px;">Gender</p>
+        <input type="radio" id="male" class="radio-control">
+        <label for="male" class="label-control">Male</label>
+        <input type="radio" id="female" class="radio-control">
+        <label for="female" class="label-control">Female</label>
+      </div>
+      <div class="flexed-select-menu">
+        <label for="country" class="label-control">Country</label>
+        <select name="country" id="country" class="input-control" style="margin-left: -45px;">
+          <option value="country" selected>Country</option>
+          <option value="mk">Macedonia</option>
+          <option value="nmk">North Macedonia</option>
+          <option value="smk">South Macedonia</option>
+        </select>
+      </div>
+      <div class="flexed">
+        <label for="email" class="label-control">E-mail</label>
+        <input type="email" id="email" name="email" class="input-control" placeholder="Enter E-Mail">
+      </div>
+      <div class="flexed">
+        <label for="phone" class="label-control">Phone</label>
+        <input type="number" id="phone" name="phone" class="input-control" placeholder="Enter phone number">
+      </div>
+      <div class="flexed">
+        <label for="password" class="label-control">Password</label>
+        <input type="password" id="password" name="password" class="input-control">
+      </div>
+      <div class="flexed">
+        <label for="confirm-password" class="label-control">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" class="input-control">
+      </div>
+      <div class="flexed-checkbox">
+        <input type="checkbox" name="agree" id="agree" class="input-control-checkbox">
+        <label for="agree" class="label-control-checkbox">I agree to the terms of use</label>
+      </div>
+      <div class="flexed-btns">
+        <button type="submit" class="btn-primary">Submit</button>
+        <button type="reset" class="btn-danger">Cancel</button>
+      </div>
+    </fieldset>
+  </form>
+</body>
+</html>
