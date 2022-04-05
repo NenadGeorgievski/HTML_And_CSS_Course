@@ -18,6 +18,7 @@ ul {
   padding: 0;
   border: 0;
 }
+
 /* Style rules for body and images */
 body {
   background-color: black;
@@ -62,6 +63,11 @@ nav li a {
   padding: 0.5em 1em;
   text-decoration: none;
 }
+nav li a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
 /* Show mobile class instead of desktop class */
 .mobile {
   display: block;
@@ -69,6 +75,7 @@ nav li a {
 .tablet-desktop {
   display: none;
 }
+
 /* Style rules for main content */
 main {
   clear: left;
@@ -153,16 +160,108 @@ footer p a {
   text-decoration: none;
   color: white;
 }
-/* #exercises {
-  clear: left;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-  background-color: #f2f2f2;
-  padding: 1% 2%;
+
+/* Media query for tablet viewport */
+@media screen and (min-width: 630px) {
+  /*Show tablet-desktop class, hide mobile class */
+  .tablet-desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+
+  /*Tablet viewport - style rule for header */
+  header {
+    position: static;
+    padding-bottom: 2%;
+  }
+
+  /*Tablet viewport - style rule for nav area */
+  nav li {
+    border-top: none;
+    display: inline-block;
+    border-right: 1px solid #fff;
+  }
+  nav li:last-child {
+    border-right: none;
+  }
+  nav li a {
+    padding: 0.1em 0.75em;
+  }
+
+  /*Tablet viewport: style rules for the main content area */
+  main ul {
+    margin: 0 0 4% 10%;
+  }
+  #exercises {
+    clear: left;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background: linear-gradient(to right, #ccc, #fff);
+    background-color: #f2f2f2;
+    padding: 1% 2%;
+  }
+  #exercises dt {
+    font-weight: bold;
+  }
+  #exercises dd {
+    padding: 0.5% 1% 2% 0;
+  }
+  .tel-num {
+    font-size: 1.25em;
+  }
+  .map {
+    width: 600px;
+    height: 450px;
+  }
 }
-#exercises dt {
-  font-weight: bold;
+
+/* Media query for desktop viewport */
+@media screen and (min-width: 769px) {
+  /* Desktop viewport - Style rules for header */
+  header {
+    width: 25%;
+    float: left;
+    padding-bottom: 0;
+  }
+  nav {
+    float: right;
+    width: 70%;
+    margin: 4em 1em 0 0;
+  }
+  nav ul {
+    text-align: right;
+  }
+  nav ul li {
+    border: none;
+  }
+  nav ul li a {
+    padding: 0.5em 1em;
+  }
+
+  /* Desktop viewport: style rules for main content */
+  main {
+    clear: both;
+  }
+  main h1 {
+    font-size: 1.8em;
+  }
+  #weights,
+  #cardio,
+  #training {
+    width: 29%;
+    float: left;
+    margin: 0 2%;
+  }
+  #exercises {
+    clear: both;
+  }
 }
-#exercises dd {
-  padding: 0.5% 1% 2% 0;
-} */
+/* Media query for large desktop viewports */
+@media screen and (min-width: 1921px) {
+  #container {
+    width: 1920px;
+    margin: 0 auto;
+  }
+}
