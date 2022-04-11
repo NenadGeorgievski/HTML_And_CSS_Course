@@ -37,6 +37,43 @@
                 <h4>Visit us at: Baker St, New London, UK, 344334</h4>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.4987117606925!2d-0.15950588434235644!3d51.52241212963765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761acf335de791%3A0xfcd227d9a53748f3!2sThe%20Sherlock%20Holmes%20Museum!5e0!3m2!1sen!2smk!4v1648209918660!5m2!1sen!2smk" width="600" height="450" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+            <div id="form">
+                <h2>Complete the form to start your free trial.</h2>
+                <form action="" class="form-grid">
+                    <fieldset>
+                        <legend>Customer Information</legend>
+                        <label for="fName">First Name:</label>
+                        <input type="text" name="fName" id="fName" required> 
+                        <label for="lName">Last Name:</label>
+                        <input type="text" name="lName" id="lName" required>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Additional Information</legend>
+                        <p>I would like more information about:</p>
+                        <label for="grpfit"><input type="checkbox" id="grpfit" name="interest" value="Group Fitness">Group Fitness</label>
+                        <label for="prtrain"><input type="checkbox" id="prtrain" name="interest" value="Personal Trainer">Personal Trainer</label>
+                        <label for="nutri"><input type="checkbox" id="nutri" name="interest" value="Nutrition">Nutrition</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Referral Source</legend>
+                        <label for="reference">How did you find us?</label>
+                        <select name="reference" id="reference">
+                            <option value="ad">Advertisement</option>
+                            <option value="friend">Friend</option>
+                            <option value="google">Google</option>
+                            <option value="social">Social Media</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <label for="textarea">Questions?</label>
+                        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                    </fieldset>
+                    <input type="submit" value="Submit" class="btn" id="submit">
+                </form>
+            </div>
         </main>
         <!--Use the footer area to add webpage footer content-->
         <footer>
