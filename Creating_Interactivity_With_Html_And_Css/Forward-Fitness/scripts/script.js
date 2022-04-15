@@ -6,6 +6,8 @@ Date: 14.04.2022
 var videoSource = document.getElementById("vid-src");
 var video = document.getElementById("example");
 var descriptionSource = document.getElementById("despsrc");
+video.style.width = "500px";
+video.style.height = "300px";
 
 //Hamburger menu
 function hamburger () {
@@ -26,6 +28,18 @@ function hamburger () {
 function plank() {
   videoSource.src = "./media/plank.mp4";
   // descriptionSource.src = "media/plankdescriptions.vtt"; 
+  video.style.display = "block";
+  video.load();
+}
+function burpees() {
+  videoSource.src = "./media/burpees.mp4";
+  // descriptionSource.src = "media/burpeesdescriptions.vtt"; 
+  video.style.display = "block";
+  video.load();
+}
+function climbers() {
+  videoSource.src = "./media/climbers.mp4";
+  // descriptionSource.src = "media/climbersdescriptions.vtt"; 
   video.style.display = "block";
   video.load();
 }
