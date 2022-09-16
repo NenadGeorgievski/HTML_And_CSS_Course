@@ -6,7 +6,7 @@ File Name: styles.css
 /* Style rules for hero image and header */
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/hero-image.jpg);
+    url(../images/hero-fitness.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
